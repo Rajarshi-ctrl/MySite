@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block title %} <title>Rajarshi Dutta</title> {% endblock %}
+
+{% block nav %}
+
+<nav class="nav-menu">
+    <ul>
+      <li><a href="/me"><i class="bx bx-home"></i> <span>Home</span></a></li>
+      <li class="active"><a href="/me/about"><i class="bx bx-user"></i> <span>About</span></a></li>
+      <li><a href="/me/skills"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+      <li><a href="/me/education"><i class="bx bx-book-content"></i> Education</a></li>
+      <li><a href="/me/project"><i class="bx bx-server"></i> Project</a></li>
+      <li><a href="/me/contact"><i class="bx bx-envelope"></i> Contact</a></li>
+  
+    </ul>
+</nav><!-- .nav-menu -->
+
+{% endblock %}
+  
+{% load static %}
+  
+{% block body %}
+
+<main id="main">
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About</h2>
+      <p>Self-motivated and hardworking fresher seeking an
+        opportunity to work in a challenging environment to prove
+        my skills and utilize my knowledge & intelligence in the
+        growth of the organization.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <img src="{% static 'img/side.jpg' %}" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>UI/UX Designer &amp; Web Developer.</h3>
+        <p class="font-italic">
+          For UI/UX design I prefer HTML5, CSS3 and modern JavaScript, and sometimes BootStrap helps me a lot. And for backend developing I use Python frameworks like Django and Flask. I generally use MySql as database.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 27 January 1999</li>
+              
+              <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +91 7980023818</li>
+              <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Kolkata, WB</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              
+              <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor</li>
+              <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> drajarshi01@gmail.com</li>
+              <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Hello, I am Rajarshi Dutta from Kolkata, West Bengal, India. I completed Bachelor of Technology in Computer Science & Engineering in 2021. I have good knowledge in <b>Core Python</b>. I am a fresher but really a quick learner. I want to start my career as a junior Python developer and want to be a valuable part of the organization which I work for. Bengali is my native language, but I can also speak Hindi and English.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Section -->
+
+</main>
+
+{% endblock %}

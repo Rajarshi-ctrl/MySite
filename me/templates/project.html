@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+
+<title>Rajarshi Dutta</title> 
+
+<style>
+  .portfolio-wrap{
+    width: 245px;
+  }
+</style>
+
+{% endblock %}
+
+{% block nav %}
+
+<nav class="nav-menu">
+    <ul>
+      <li><a href="/me"><i class="bx bx-home"></i> <span>Home</span></a></li>
+      <li><a href="/me/about"><i class="bx bx-user"></i> <span>About</span></a></li>
+      <li><a href="/me/skills"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+      <li><a href="/me/education"><i class="bx bx-book-content"></i> Education</a></li>
+      <li class="active"><a href="/me/project"><i class="bx bx-server"></i> Project</a></li>
+      <li><a href="/me/contact"><i class="bx bx-envelope"></i> Contact</a></li>
+  
+    </ul>
+</nav><!-- .nav-menu -->
+
+{% endblock %}
+  
+{% load static %}
+  
+{% block body %}
+
+<main id="main">
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Projects</h2>
+      <p> Here is some projects, which I coded during my final semester. I mostly used Python programming language. In case of GUI, I used TKinter library and also other various libraries of Python. And in case of hybrid app I normally used HTML, CSS and JavaScript. You can get those GitHub links for all these projects down here. </p>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">GUI</li>
+          <li data-filter=".filter-card">Game</li>
+          <li data-filter=".filter-web">Other</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="{% static 'img/portfolio/1.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="{% static 'img/portfolio/1.png' %}" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="https://github.com/Rajarshi-ctrl/Desktop-assistant" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="{% static 'img/portfolio/2.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="{% static 'img/portfolio/2.png' %}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="https://github.com/Rajarshi-ctrl/Face_detection" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="{% static 'img/portfolio/3.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="{% static 'img/portfolio/3.png' %}" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+            <a href="https://github.com/Rajarshi-ctrl/Music_Player" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="{% static 'img/portfolio/4.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="{% static 'img/portfolio/4.png' %}" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+            <a href="https://github.com/Rajarshi-ctrl/Calcultor" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="{% static 'img/portfolio/5.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="{% static 'img/portfolio/5.png' %}" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+            <a href="https://github.com/Rajarshi-ctrl/Text_Editor" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="{% static 'img/portfolio/6.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="{% static 'img/portfolio/6.png' %}" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+            <a href="https://github.com/Rajarshi-ctrl/Tik-Tok-Toi" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="{% static 'img/portfolio/7.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-links">
+            <a href="{% static 'img/portfolio/7.png' %}" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+            <a href="https://github.com/Rajarshi-ctrl/Sudoku" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+</main>
+
+{% endblock %}
