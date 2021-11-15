@@ -16,7 +16,7 @@ defer==1.0.4
 distro==1.4.0
 distro-info==1.0
 Django==3.2.8
-duplicity==0.8.12
+
 entrypoints==0.3
 fasteners==0.14.1
 future==0.18.2
