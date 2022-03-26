@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from me.models import Contact
 from django.contrib import messages
-import datetime
+
+from me.serializers import ContactSerializer
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
 
 # Create your views here.
@@ -26,11 +29,16 @@ def contact(request):
         email = request.POST.get('email', '')
         subject = request.POST.get('subject', '')
         message = request.POST.get('message', '')
-        dt = str(datetime.datetime.now())
 
-        contact = Contact(name=name, email=email, subject=subject, message=message, dt=dt)
+        contact = Contact(name=name, email=email, subject=subject, message=message)
         contact.save()
 
         messages.success(request, 'Thanks for your message. We will get in touch soon.')
 
     return render(request, 'contact.html')
+
+@api_view(['GET'])
+def getContact(request):
+    contacts = Contact.objects.all()
+    serializer = ContactSerializer(contacts, many=True)
+    return Response(serializer.data)

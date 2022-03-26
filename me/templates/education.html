@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 
-{% block title %} 
+{% block title %}
 
-<title>Rajarshi Dutta</title> 
+<title>Rajarshi Dutta</title>
 
-<style>
+<!-- <style>
     .resume .resume-item::before {
         content: "";
         position: absolute;
@@ -19,69 +19,93 @@
     .resume{
       padding: 20px;
     }
-</style>
+</style> -->
 
 {% endblock %}
 
 {% block nav %}
 
 <nav class="nav-menu">
-    <ul>
-      <li><a href="/me"><i class="bx bx-home"></i> <span>Home</span></a></li>
-      <li><a href="/me/about"><i class="bx bx-user"></i> <span>About</span></a></li>
-      <li><a href="/me/skills"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
-      <li class="active"><a href="/me/education"><i class="bx bx-book-content"></i> Education</a></li>
-      <li><a href="/me/project"><i class="bx bx-server"></i> Project</a></li>
-      <li><a href="/me/contact"><i class="bx bx-envelope"></i> Contact</a></li>
-  
-    </ul>
+  <ul>
+    <li><a href="/me"><i class="bx bx-home"></i> <span>Home</span></a></li>
+    <li><a href="/me/about"><i class="bx bx-user"></i> <span>About</span></a></li>
+    <li><a href="/me/skills"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+    <li class="active"><a href="/me/education"><i class="bx bx-book-content"></i> Resume</a></li>
+    <li><a href="/me/project"><i class="bx bx-server"></i> Projects</a></li>
+    <li><a href="/me/contact"><i class="bx bx-envelope"></i> Contact</a></li>
+
+  </ul>
 </nav><!-- .nav-menu -->
 
 {% endblock %}
-  
+
 {% load static %}
-  
+
 {% block body %}
 
 <main id="main">
-
-<section id="skills" class="skills section-bg">
+  <section id="resume" class="resume">
     <div class="container">
 
-        <div class="section-title">
-          <h2>Education</h2>
-            <div class="resume">
-              <div class="resume-item">
-                <h4>Bachelor of Technology </h4>
-                <h5 style="background: #e4edf9; display: inline-block;">2017 - 2021</h5>
-                <p style="padding: 10px 0px;"><em><i>University of Engineering &amp; Management, Kolkata </i> </em></p>
-                <p>Completed B. Tech in Computer Science and Engineering from
-                  University of Engineering and Management with 7.5 DGPA.</p>
-              </div>
-            </div>
+      <div class="section-title">
+        <h2>Resume</h2>
+      </div>
 
-            <div class="resume">
-              <div class="resume-item">
-                <h4>Higher Secondary </h4>
-                <h5 style="background: #e4edf9; display: inline-block;">2014 - 2017</h5>
-                <p style="padding: 10px 0px;"><em><i>Kalyannagar Vidyapith, Khardah </i> </em></p>
-                <p>Passed Higher Secondary education from West Bengal Council of
-                  Higher Secondary Education with 69.2% marks.</p>
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up">
 
-            <div class="resume">
-              <div class="resume-item">
-                <h4>Secondary </h4>
-                <h5 style="background: #e4edf9; display: inline-block;">2013 - 2014</h5>
-                <p style="padding: 10px 0px;"><em><i>Sodepur High School, Sodepur </i> </em></p>
-                <p>Passed Secondary education from West Bengal Board of Secondary
-                  Education with 75.14% marks.</p>
-              </div>
-            </div>
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Bachelor of Technology </h4>
+            <h5 style="background: #e4edf9; display: inline-block;">2017 - 2021</h5>
+            <p style="padding: 10px 0px;"><em><i>University of Engineering &amp; Management, Kolkata </i> </em></p>
+            <p>Completed B. Tech in Computer Science and Engineering from
+              University of Engineering and Management with 7.5 DGPA.</p>
+          </div>
+          <div class="resume-item">
+            <h4>Higher Secondary </h4>
+            <h5 style="background: #e4edf9; display: inline-block;">2014 - 2017</h5>
+            <p style="padding: 10px 0px;"><em><i>Kalyannagar Vidyapith, Khardah </i> </em></p>
+            <p>Passed Higher Secondary education from West Bengal Council of
+              Higher Secondary Education with 69.2% marks.</p>
+          </div>
+          <div class="resume-item">
+            <h4>Secondary </h4>
+            <h5 style="background: #e4edf9; display: inline-block;">2013 - 2014</h5>
+            <p style="padding: 10px 0px;"><em><i>Sodepur High School, Sodepur </i> </em></p>
+            <p>Passed Secondary education from West Bengal Board of Secondary
+              Education with 75.14% marks.</p>
+          </div>
         </div>
+
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Junior Python Developer</h4>
+            <h5>Nov 2021 - Present</h5>
+            <p><em>White Net Group, Noida </em></p> <br>
+            <ul>
+              <li>Design and Develop a time tracking website using
+                HTML, CSS, Bootstrap, Python(Django), and
+                JavaScript, which can track every single moment of an
+                employee.</li> <br>
+              <li>Design a Placement Training website using HTML, CSS,
+                and jQuery.
+              </li> <br>
+              <li>Develop an email sending program that can fetch data
+                from excel sheets and send emails.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
-</section>
+  </section><!-- End Resume Section -->
+
+  </div>
+  </div>
+  </section>
 
 </main>
 
